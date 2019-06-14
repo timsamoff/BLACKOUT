@@ -1,0 +1,226 @@
+{
+    "settings": {
+        "showCollisions": true,
+        "showConnections": true,
+        "sidebarWidth": 300,
+        "startX": 0,
+        "startY": 0,
+        "startDirection": "down",
+        "zoom": 200,
+        "startSceneId": "e52e1e87-3ecf-499c-8557-c91df9938a7a",
+        "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
+    },
+    "_version": "1.1.0",
+    "author": "Tim Samoff",
+    "name": "SPLIT",
+    "variables": [],
+    "backgrounds": [
+        {
+            "id": "a087bf10-4832-4987-9b1b-84aa440b6979",
+            "name": "titlescreen01",
+            "width": 20,
+            "height": 32,
+            "imageWidth": 160,
+            "imageHeight": 256,
+            "filename": "titlescreen01.png",
+            "_v": 1560541664950
+        },
+        {
+            "id": "762f2f1c-25fa-4310-b1d0-3d43e3dd9382",
+            "name": "titlescreen02",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "titlescreen02.png",
+            "_v": 1560541842395
+        }
+    ],
+    "spriteSheets": [
+        {
+            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+            "name": "actor_animated",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "actor_animated.png",
+            "_v": 1560540529658
+        },
+        {
+            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+            "name": "actor",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "actor.png",
+            "_v": 1560540529659
+        },
+        {
+            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+            "name": "static",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "static.png",
+            "_v": 1560540529658
+        }
+    ],
+    "scenes": [
+        {
+            "id": "e52e1e87-3ecf-499c-8557-c91df9938a7a",
+            "name": "Title Screen",
+            "backgroundId": "a087bf10-4832-4987-9b1b-84aa440b6979",
+            "x": 282,
+            "y": 238.5,
+            "width": 20,
+            "height": 32,
+            "actors": [],
+            "triggers": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "script": [
+                {
+                    "id": "02c835be-55d9-4740-a8b5-8687f4508877",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "ec7aa7b2-4dbb-4170-8237-260ae4c4ce2b",
+                    "command": "EVENT_CAMERA_MOVE_TO",
+                    "args": {
+                        "x": 0,
+                        "y": 14,
+                        "speed": "2"
+                    }
+                },
+                {
+                    "id": "49e0fa4f-3dc5-497f-b421-a3db692c7889",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "91f25f7b-18d5-4578-a8fa-0788088c8ce9",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "1"
+                    }
+                },
+                {
+                    "id": "8f143802-a39e-42f2-96ff-757c145c36df",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "id": "91f25f7b-18d5-4578-a8fa-0788088c8ce9",
+            "name": "Scene 2",
+            "backgroundId": "762f2f1c-25fa-4310-b1d0-3d43e3dd9382",
+            "x": 460.5,
+            "y": 240.5,
+            "width": 20,
+            "height": 32,
+            "actors": [],
+            "triggers": [],
+            "collisions": [],
+            "script": [
+                {
+                    "id": "f629c3a0-9549-4fb8-ba32-a94491fa4e03",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "8f143802-a39e-42f2-96ff-757c145c36df",
+                    "command": "EVENT_END"
+                }
+            ]
+        }
+    ],
+    "music": [
+        {
+            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
+            "name": "template",
+            "filename": "template.mod",
+            "_v": 1560540529656
+        }
+    ]
+}
