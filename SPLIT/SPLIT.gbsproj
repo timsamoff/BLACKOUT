@@ -23,7 +23,7 @@
             "imageWidth": 160,
             "imageHeight": 256,
             "filename": "titlescreen01.png",
-            "_v": 1560541664950
+            "_v": 1560543253454
         },
         {
             "id": "762f2f1c-25fa-4310-b1d0-3d43e3dd9382",
@@ -33,7 +33,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen02.png",
-            "_v": 1560541842395
+            "_v": 1560543253454
         }
     ],
     "spriteSheets": [
@@ -43,7 +43,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1560540529658
+            "_v": 1560543253454
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -51,7 +51,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1560540529659
+            "_v": 1560543253454
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -59,7 +59,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1560540529658
+            "_v": 1560543253454
         }
     ],
     "scenes": [
@@ -68,7 +68,7 @@
             "name": "Title Screen",
             "backgroundId": "a087bf10-4832-4987-9b1b-84aa440b6979",
             "x": 282,
-            "y": 238.5,
+            "y": 239,
             "width": 20,
             "height": 32,
             "actors": [],
@@ -173,6 +173,13 @@
                     }
                 },
                 {
+                    "id": "52e6a465-3093-49c0-beec-cc1ae8927d9c",
+                    "command": "EVENT_CAMERA_SHAKE",
+                    "args": {
+                        "time": 0.1
+                    }
+                },
+                {
                     "id": "49e0fa4f-3dc5-497f-b421-a3db692c7889",
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
@@ -209,6 +216,27 @@
                     }
                 },
                 {
+                    "id": "60237c3d-c62d-4d9b-af6f-479df3e945af",
+                    "command": "EVENT_OVERLAY_SHOW",
+                    "args": {
+                        "color": "black",
+                        "x": 0,
+                        "y": 12
+                    }
+                },
+                {
+                    "id": "5fe17a4c-6935-4bc6-8495-b43c1f5ba664",
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 1
+                    }
+                },
+                {
+                    "id": "42eedefd-31d0-43f2-b2c5-5ead5b8bfeb2",
+                    "command": "EVENT_OVERLAY_HIDE",
+                    "args": {}
+                },
+                {
                     "id": "8f143802-a39e-42f2-96ff-757c145c36df",
                     "command": "EVENT_END"
                 }
@@ -220,7 +248,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1560540529656
+            "_v": 1560543253452
         }
     ]
 }
