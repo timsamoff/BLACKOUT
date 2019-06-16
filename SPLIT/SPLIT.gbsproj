@@ -45,16 +45,6 @@
             "_v": 1560640383956
         },
         {
-            "id": "f43ee075-525e-4444-b9c1-d3be010ddfeb",
-            "name": "room001",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "room001.png",
-            "_v": 1560640256071
-        },
-        {
             "id": "8aa4adda-1e8c-4753-bdd0-15eb9dbc0cd0",
             "name": "scene001",
             "width": 20,
@@ -63,16 +53,6 @@
             "imageHeight": 144,
             "filename": "scene001.png",
             "_v": 1560649637934
-        },
-        {
-            "id": "f9e407c2-5088-4eb8-9e2a-c366857e9a4b",
-            "name": "scene002",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "scene002.png",
-            "_v": 1560640256071
         },
         {
             "id": "a087bf10-4832-4987-9b1b-84aa440b6979",
@@ -129,12 +109,12 @@
             "_v": 1560649055803
         },
         {
-            "id": "6ad404d9-a134-4bfd-b9ec-ea8033fcb810",
-            "name": "player02",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "player02.png",
-            "_v": 1560642794990
+            "id": "f8447cb3-5178-4948-b001-342dd91f08f5",
+            "name": "sister",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "sister.png",
+            "_v": 1560650097868
         },
         {
             "id": "f27534ed-b8f9-4a19-86b9-9447a60f2fec",
@@ -354,7 +334,71 @@
             "y": 249,
             "width": 20,
             "height": 18,
-            "actors": [],
+            "actors": [
+                {
+                    "id": "68298c6e-e321-41e9-9d51-47867e7bae33",
+                    "spriteSheetId": "f8447cb3-5178-4948-b001-342dd91f08f5",
+                    "x": 9,
+                    "y": 11,
+                    "movementType": "randomWalk",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "936bbe86-528e-46a1-bfe3-6a1d55c4b359",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "2"
+                            },
+                            "true": [
+                                {
+                                    "id": "05be7598-4f4b-429a-a1d5-7da9db1cc146",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "\"Hi, bubba!\""
+                                    }
+                                },
+                                {
+                                    "id": "664b5387-da50-4282-aa88-fcdb2b79e943",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "\"Hey, Sis!\""
+                                    }
+                                },
+                                {
+                                    "id": "9d25d703-7812-4bad-b61e-723de152113e",
+                                    "command": "EVENT_END"
+                                }
+                            ],
+                            "false": [
+                                {
+                                    "id": "c1f0dc36-a8b3-483c-ad11-62e7d638465b",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "\"Is th...that\ny...you?\""
+                                    }
+                                },
+                                {
+                                    "id": "39108ba0-aab7-4543-9ffa-1f62c007f86a",
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                        "text": "\"Outta my way!\""
+                                    }
+                                },
+                                {
+                                    "id": "4571616b-fd2a-45bf-97b3-d339a93fa1cb",
+                                    "command": "EVENT_END"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "254e15ed-0f9b-4155-81b8-659a28b59b04",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
             "triggers": [],
             "collisions": [
                 0,
