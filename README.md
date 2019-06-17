@@ -1,4 +1,4 @@
-BLACKOUT
+SPLIT
 
 by Tim Samoff (https://samoff.com)
 
