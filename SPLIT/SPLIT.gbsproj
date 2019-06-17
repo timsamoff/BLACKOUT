@@ -1061,6 +1061,14 @@
             ],
             "script": [
                 {
+                    "id": "1191fb49-a84b-43f0-9ce9-c4974286fe6f",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "b86593f0-fdb5-4fc4-a2d0-9b8324debfe6",
+                        "loop": true
+                    }
+                },
+                {
                     "id": "e7553e7e-a5f5-4626-b72f-80277845109a",
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
@@ -1323,6 +1331,14 @@
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
                         "time": 0.1
+                    }
+                },
+                {
+                    "id": "bca38c1c-9592-4873-bdec-11be0578fb9a",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "1b1fb4cc-2f83-433b-bc75-e55fdf96a404",
+                        "loop": true
                     }
                 },
                 {
@@ -4668,10 +4684,16 @@
     ],
     "music": [
         {
-            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
-            "name": "template",
-            "filename": "template.mod",
-            "_v": 1560640256068
+            "id": "b86593f0-fdb5-4fc4-a2d0-9b8324debfe6",
+            "name": "SPLIT_gameplay",
+            "filename": "SPLIT_gameplay.mod",
+            "_v": 1560747064995
+        },
+        {
+            "id": "1b1fb4cc-2f83-433b-bc75-e55fdf96a404",
+            "name": "SPLIT_intro",
+            "filename": "SPLIT_intro.mod",
+            "_v": 1560746980364
         }
     ]
 }
