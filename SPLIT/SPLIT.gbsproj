@@ -4269,6 +4269,20 @@
                                             }
                                         },
                                         {
+                                            "id": "979979e4-74b2-4381-8ce3-36f3fc8dec5b",
+                                            "command": "EVENT_ACTOR_SHOW",
+                                            "args": {
+                                                "actorId": "bba942ce-0662-428e-a799-af6b7bce2002"
+                                            }
+                                        },
+                                        {
+                                            "id": "214b503f-d48c-4016-9e4c-6a2934884cfc",
+                                            "command": "EVENT_ACTOR_SHOW",
+                                            "args": {
+                                                "actorId": "3e38ec83-a0a1-4a23-b0a3-e61d57e4f815"
+                                            }
+                                        },
+                                        {
                                             "id": "ec356062-4521-49d1-ad85-66bba83bc844",
                                             "command": "EVENT_END"
                                         }
@@ -4544,6 +4558,13 @@
                             "command": "EVENT_ACTOR_SHOW",
                             "args": {
                                 "actorId": "bba942ce-0662-428e-a799-af6b7bce2002"
+                            }
+                        },
+                        {
+                            "id": "653ff3a6-0588-40ad-ab06-afec632ec14a",
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "24a4d00d-ebfc-4cec-9ebb-b8608f26f03c"
                             }
                         },
                         {
